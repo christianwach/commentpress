@@ -1228,7 +1228,7 @@ Sidebar
 		}
 		
 		/* when default tab */
-		body.cp_sidebar_contents #toc_header.sidebar_header
+		body.cp_sidebar_toc #toc_header.sidebar_header
 		{
 			display: block;
 			height: 27px;
@@ -1294,7 +1294,7 @@ Sidebar
 		}
 		
 		/* when not default, but commentable */
-		body.cp_sidebar_contents.commentable #comments_header.sidebar_header,
+		body.cp_sidebar_toc.commentable #comments_header.sidebar_header,
 		body.cp_sidebar_activity.commentable #comments_header.sidebar_header
 		{
 			display: block;
@@ -1400,7 +1400,7 @@ Table of Contents sidebar
 {
 }
 	
-body.cp_sidebar_contents #toc_sidebar
+body.cp_sidebar_toc #toc_sidebar
 {
 	z-index: 2010;
 }

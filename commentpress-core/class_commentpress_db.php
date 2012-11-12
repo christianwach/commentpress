@@ -90,8 +90,8 @@ class CommentpressCoreDatabase {
 	// default blog workflow (like translation, for example), off by default
 	var $blog_workflow = 0;
 	
-	// default sidebar
-	var $sidebar_default = 'contents';
+	// default sidebar ('toc' => Contents tab)
+	var $sidebar_default = 'toc';
 		
 	// default minimum page width (px)
 	var $min_page_width = '447';
@@ -2899,7 +2899,7 @@ class CommentpressCoreDatabase {
 		// add touch var
 		$vars['cp_is_touch'] = 0;
 
-		// is it a tocuh device?
+		// is it a touch device?
 		if ( isset( $this->is_mobile_touch ) AND $this->is_mobile_touch ) {
 			
 			// is touch
@@ -2913,7 +2913,7 @@ class CommentpressCoreDatabase {
 		// add tablet var
 		$vars['cp_is_tablet'] = 0;
 
-		// is it a tocuh device?
+		// is it a touch device?
 		if ( isset( $this->is_tablet ) AND $this->is_tablet ) {
 			
 			// is touch
