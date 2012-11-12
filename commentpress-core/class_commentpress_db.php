@@ -91,7 +91,7 @@ class CommentpressCoreDatabase {
 	var $blog_workflow = 0;
 	
 	// default sidebar
-	var $sidebar_default = 'comments';
+	var $sidebar_default = 'contents';
 		
 	// default minimum page width (px)
 	var $min_page_width = '447';
@@ -3837,6 +3837,9 @@ You can also set a number of options in <em>Wordpress</em> &#8594; <em>Settings<
 		
 		// blog type
 		$this->option_set( 'cp_blog_type', $this->blog_type );
+		
+		// default sidebar
+		$this->option_set( 'cp_sidebar_default', $this->sidebar_default );
 		
 		// store it
 		$this->options_save();

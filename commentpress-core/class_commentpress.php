@@ -2143,7 +2143,7 @@ class CommentpressCore {
 			'cp_sidebar_tab_order', 
 			
 			// default order
-			array( 'comments', 'activity', 'contents' ) 
+			array( 'contents', 'comments', 'activity' ) 
 			
 		);
 		

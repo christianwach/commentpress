@@ -1223,11 +1223,12 @@ Sidebar
 		/* Table of Contents Header */
 		#toc_header.sidebar_header
 		{
-			display: none;
+			/* always visible */
 			/* margin-right: 0; */
 		}
 		
-		body.cp_sidebar_toc #toc_header.sidebar_header
+		/* when default tab */
+		body.cp_sidebar_contents #toc_header.sidebar_header
 		{
 			display: block;
 			height: 27px;
@@ -1253,8 +1254,10 @@ Sidebar
 		#activity_header.sidebar_header,
 		body.blog_post #activity_header.sidebar_header
 		{
+			/* always visible */
 		}
 		
+		/* when default tab */
 		body.cp_sidebar_activity #activity_header.sidebar_header
 		{
 			display: block;
@@ -1283,14 +1286,16 @@ Sidebar
 			display: none;
 		}
 		
+		/* when default tab */
 		body.cp_sidebar_comments #comments_header.sidebar_header
 		{
 			display: block;
 			height: 27px;
 		}
 		
-		body.cp_sidebar_activity.commentable #comments_header.sidebar_header,
-		body.cp_sidebar_toc.commentable #comments_header.sidebar_header
+		/* when not default, but commentable */
+		body.cp_sidebar_contents.commentable #comments_header.sidebar_header,
+		body.cp_sidebar_activity.commentable #comments_header.sidebar_header
 		{
 			display: block;
 		}
@@ -1395,7 +1400,7 @@ Table of Contents sidebar
 {
 }
 	
-body.cp_sidebar_toc #toc_sidebar
+body.cp_sidebar_contents #toc_sidebar
 {
 	z-index: 2010;
 }
