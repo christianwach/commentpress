@@ -1390,6 +1390,11 @@ HELPTEXT;
 				$tag = '<span id="cp_minimise_all_activity" title="'.__( 'Minimise all Activity Sections', 'commentpress-plugin' ).'"></span>';
 				break;
 			
+			case 'toc':
+				// define minimise button
+				$tag = '<span id="cp_minimise_all_contents" title="'.__( 'Minimise all Contents Sections', 'commentpress-plugin' ).'"></span>';
+				break;
+			
 		}
 		
 		// --<
